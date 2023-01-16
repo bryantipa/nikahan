@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hide menggunakan js</title>
+	<style type="text/css">
+		  .contoh{
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+/*    display: flex;*/
+    align-items: center;
+    text-align: center;
+    background-color: lightgray;    
+    padding: 0px;
+  }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="kotak" class="contoh">
+			<video id="vid1" controls width="100%">	
+				<source src="vid1.mp4" type="video/mp4">
+			</video>
+		<button onclick="sembunyi()" style="display:inline;">
+			Sembunyikan
+		</button>
+		<button onclick="muncul()" style="display:inline;">
+			Munculkan
+		</button>
+		<button>Hsi</button>
+	</div>
+</body>
+	<script type="text/javascript">
+			var	id_kotak = document.getElementById('kotak');
+			var video = document.getElementById("vid1");
+			function sembunyi	(){
+				id_kotak.style.display = "none";
+				video.pause();
+			}
+			function muncul(){
+				id_kotak.style.display = "flex";
+				video.play();
+
+			}
+	</script>
+</html>

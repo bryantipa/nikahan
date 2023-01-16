@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hilangkan File</title>
+	<!-- koneksi ke jQuery 3 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<!-- koneksi ke Bootstrap 5.2 -->
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<!-- ini bagian loadingnya -->
+	
+
+	<div class="container">
+		<div class="nama flex">
+			<h1>Hallo Selamat Datang!</h1>
+			<p>Selamat datang Bapak Ibu tamu Undangan</p>
+		</div>
+		<img src="https://london.bridestory.com/images/c_fill,dpr_1.0,f_auto,fl_progressive,pg_1,q_80,w_680/v1/assets/img_6614-SkU2S8tHu/wedding-mbanjar-photography_stunning-muslim-wedding_1.jpg">
+	</div>
+
+	<div id="loader">
+		<p>Loading..</p>
+	</div>
+
+	<div id="hilang" class="kotak flex">
+		<h1 id="nama_awal">Arif & Winda</h1>
+		<i id="ucapan_kecil">- Undangan Pernikahan -</i>
+
+		<button id="btn_welcome" onclick="btn_wellcome()" style="margin: 20px;">
+			Selamat Datang
+			<br>
+		</button>
+		<video id="vid" loop autoplay muted>
+			<source src="vid2.mp4" type="video/mp4">
+		</video>
+		<video id="vid2" loop>
+			<source src="vid2.mp4" type="video/mp4">
+		</video>
+
+	</div>
+</body>
+
+	<script type="text/javascript">
+		
+		var kotak = document.getElementById('hilang');
+		var video = document.getElementById('vid2');
+		function btn_wellcome(){
+			kotak.style.display = "none";
+			video.play();
+		}
+		function tampil(){
+			video.pause();
+		}
+		
+		// script loading jQuerry disini.
+		$(window).on('load',() => {
+			$('#loader').fadeOut(1500, () => {
+				$(this).hide()
+			})
+		})
+	</script>
+</html>

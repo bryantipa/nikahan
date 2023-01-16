@@ -1,0 +1,133 @@
+.kotak{
+/* membuat posisi layernya menjadi paling depan	*/
+	position: absolute;
+
+/* agar konten memenuhi layar	*/
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+/* agar konten anda tidak dapat diScrool atau digeser */
+	position: fixed;
+/* untuk background anda */
+	background: red;
+/*agar konten anda dapat dilihat*/
+	display: flex;
+
+	z-index: 99;
+	/* menyembunyikan konten anda	*/
+	/* display: none;*/
+/*		background-image: ulr('https://london.bridestory.com/images/c_fill,dpr_1.0,f_auto,fl_progressive,pg_1,q_80,w_680/v1/assets/img_6614-SkU2S8tHu/wedding-mbanjar-photography_stunning-muslim-wedding_1.jpg');*/
+}
+
+.kotak h1 {
+	z-index: 99;
+	padding: 20px;
+	
+	position: absolute;
+	z-index: 99;
+	height: 30%;
+text-shadow: 3px 2px 1px grey;
+}
+.kotak i {
+	z-index: 99;
+	padding: 20px;
+	
+	position: absolute;
+	z-index: 99;
+	height: 20%;
+text-shadow: 3px 2px 1px grey;
+}
+.flex{
+	display: flex;
+	flex-direction: column;
+	justify-content: center	;
+	align-items: center ;
+
+	z-index: 99;
+
+}
+
+#loader{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	background:white;
+
+	display: flex;
+	justify-content: center	;
+	align-items: center	;
+	z-index: 100;
+	position: fixed;
+}
+
+body{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+	margin: 0;
+
+	background: blueviolet;
+}
+
+.container{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background: white;
+	background-image: gradien-color(0,0,0,0.3), ulr('https://london.bridestory.com/images/c_fill,dpr_1.0,f_auto,fl_progressive,pg_1,q_80,w_680/v1/assets/img_6614-SkU2S8tHu/wedding-mbanjar-photography_stunning-muslim-wedding_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 50;
+}
+.container img{
+	width: 100%;
+	position: relative;
+/*	display: flex;*/
+	z-index: 97;
+
+}
+.container .nama{
+	display: flex;
+	text-align: center;
+	align-items: center	;
+	z-index:98;
+	position: absolute;
+
+	color: white;
+	width: 100%;
+	height: 60%;
+	text-shadow: ;
+}
+
+
+
+/*untuk videonya*/
+#vid{
+	position: absolute ;
+	  display: flex;
+	  z-index: 90;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;	
+}
+
+#btn_welcome{
+	position: absolute;
+	z-index: 99;
+}
+#nama_awal{
+	position: absolute;
+	z-index: 99;
+	height: 30%;
+}
